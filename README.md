@@ -1,9 +1,6 @@
 # Search & Rescue exploration simulator
 
-:::info
-This repository was created for the course: ME41125 Introduction to Engineering Research, given in Q4 of academic year 2022-2023. Author: Pelle Wiersma (4749804)
-:::
-
+This repository was created for the course: ME41125 Introduction to Engineering Research, given in Q4 of academic year 2022-2023.
 
 ## Purpose
 The code provided in this repository aims to assess how well using audio as a heuristic for the locations of humans in an unknown environment, affects the **exploration time** until all humans in the environment are found.
@@ -25,15 +22,12 @@ The code consists of 2 parts blabla
   conda install -c anaconda scipy
   conda install -c anaconda pillow
 ```
-:::success
-Now all required packages are installed!
-:::
+Now all required packages are installed it is time to run the code!
 
 ## Running the code
-:::info 
 :bulb:
 Parameters like which scenario to run and the properties of the robots can be set in `swarm_exploration.py` and `robot.py`, respectively.
-:::
+
 To run the simulation, enter the following command:
 ```console
   python3 swarm_exploration.py

@@ -57,10 +57,12 @@ class RadarLine:
                         #print("DISCOVERY ", wall.loc_from, ", ", wall.loc_to)
                     return
             #Valid spot:
-            rounded_spot = [clamp(round(test_spot[0])-1, 0, 18), clamp(round(test_spot[1])-1, 0, 18)]
+            rounded_spot = [clamp(round(test_spot[0]-1), 0, 18), clamp(round(test_spot[1]-1), 0, 18)]
+            rounded_spot_human = [clamp(round(test_spot[0]), 0, 18), clamp(round(test_spot[1]), 0, 18)]
+            #print(rounded_spot)
             if env_map.squares[rounded_spot[1]][rounded_spot[0]].discovered == False:
                 for human in humans:
-                    if human.location == rounded_spot:
+                    if human.location == rounded_spot_human:
                         #print("FOUND HUMAN")
                         human.discovered = True
                 env_map.squares[rounded_spot[1]][rounded_spot[0]].discovered = True
@@ -141,6 +143,7 @@ class Robot:
             self.goal_reached = False
             self.waypoints.append(self.closest_node(env_map))
             self.waypoints.extend(env_map.find_path(self.closest_node(env_map), goal)[0])
+            #print(goal)
         else:
             #self.calculate_new_target(env_map)
             self.goal_reached = True

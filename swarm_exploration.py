@@ -42,14 +42,17 @@ clock = pygame.time.Clock()
 screen = pygame.display.set_mode([500, 500])
 for iteration in range(30):
 
-    env_map = Map('Scenarios/map_empty.bmp')
+    env_map = Map('Scenarios/map_maze.bmp')
 
-    audio_heuristic = True
+    audio_heuristic = False
 
     human = Human([3.5, 3.5])
     humans = []
     for i in range(4):
-        humans.append(Human([np.random.randint(1, 18), np.random.randint(1, 18)]))
+        x = np.random.randint(1, 18)
+        y = np.random.randint(1, 18)
+        #print(x, ", ", y)
+        humans.append(Human([x, y]))
 
 
     robots = []

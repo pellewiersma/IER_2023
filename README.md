@@ -5,9 +5,6 @@ This repository was created for the course: ME41125 Introduction to Engineering 
 ## Purpose
 The code provided in this repository aims to assess how well using audio as a heuristic for the locations of humans in an unknown environment, affects the **exploration time** until all humans in the environment are found.
 
-## Structure
-The code consists of 2 parts blabla
-
 ## Installation
 
 1. First of all, clone this repository in your preferred location

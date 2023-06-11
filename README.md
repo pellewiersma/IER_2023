@@ -25,7 +25,7 @@ Now all required packages are installed it is time to run the code!
 :bulb:
 Parameters like which scenario to run and the properties of the robots can be set in `swarm_exploration.py` and `robot.py`, respectively.
 
-To run the simulation, enter the following command:
+To run the simulation, enter the following command: (Use python or python3, depending on the version of python present on your machine)
 ```console
   python3 swarm_exploration.py
 ```
